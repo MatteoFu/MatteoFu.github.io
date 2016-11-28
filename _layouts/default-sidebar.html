@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body>
+
+	{% include navbar.html %}
+	
+    <!-- Page Content -->
+    <div class="container">
+	
+		{% include header.html %}
+
+
+<!-- Content Row -->
+<div class="row">
+	<!-- Sidebar Column -->
+	<div class="col-md-3">
+		{% include sidebar.html %}
+	</div>
+	<!-- Content Column -->
+	<div class="col-md-9">
+		{{ content }}
+	</div>
+</div>
+		
+
+		
+		
+		{% include footer.html %}
+	
+    </div>
+    <!-- /.container -->
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
